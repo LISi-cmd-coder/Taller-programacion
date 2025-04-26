@@ -1,0 +1,122 @@
+:root {
+  --bs-pink: #d07c9b;
+  --bs-dark-purple: #2a0839;
+}
+
+.title {
+  color: white;
+  background-color: var(--bs-dark-purple);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.parrafo {
+  color: #eef1ef;
+  font-style: italic;
+  background-color: var(--bs-dark-purple);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.btn-custom {
+  background-color: var(--bs-pink);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #ba6a87;
+}
+
+.carousel-inner {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.pie-text-center {
+  background-color: var(--bs-dark-purple);
+  color: var(--bs-pink);
+  padding: 1.5rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+      font-size: 1.5rem;
+      padding: 1rem;
+  }
+  
+  .parrafo {
+      font-size: 1rem;
+  }
+  
+  .navbar-brand {
+      font-size: 1.1rem;
+  }
+  
+  .btn-custom {
+      width: 100%;
+      margin-top: 0.5rem;
+  }
+}
+
+
+.shadow-hover {
+  transition: all 0.3s ease;
+}
+
+.shadow-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.bi { transition: color 0.2s; }
+.bi:hover { color: #0d6efd !important; }
+
+
+
+    /* Ajustes clave */
+    .hero-section {
+        position: relative;
+        height: 80vh; /* Cambiado a 80vh */
+        overflow: hidden;
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 100%;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .carousel-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .carousel-item img {
+        height: 80vh; /* Igual que hero-section */
+        object-fit: cover;
+        filter: brightness(0.7);
+    }
+
+    /* Asegurar que el footer sea visible */
+    footer {
+        position: relative;
+        z-index: 3;
+        background-color: #181818d9;
+    }
