@@ -15,35 +15,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 </head>
 
 <body class="cuerpo">
     <!-- NAVBAR -->
+     
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="bi bi-stars"></i> VAVI</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="container-fluid justify-content-between justify-content-lg-center"> <!-- Flexbox responsive -->
+        <!-- Logo centrado en móvil -->
+        <a class="navbar-brand" href="<?= base_url('/') ?>">
+    <i class="bi bi-stars"></i> VAVI
+</a>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="<?= base_url('home')?>">Principal</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('quienes_somos')?>">Quienes Somos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('compras')?>">Comprar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('contacto')?>">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('terminos') ?>">Términos y condiciones</a></li>
+        
+        <!-- Botón toggler -->
+        <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <li class="nav-item">
-                        <a class="btn btn-custom" href="#">
-                            <i class="bi bi-cart"></i> Carrito
-                            
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Menú centrado -->
+        <div class="collapse navbar-collapse justify-content-lg-center order-lg-2" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('/')?>">Principal</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('quienes_somos')?>">Quienes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('compras')?>">Comercializacion</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('contacto')?>">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('terminos') ?>">Términos y condiciones</a></li>
+            </ul>
         </div>
-    </nav>
-    
+
+</nav>
