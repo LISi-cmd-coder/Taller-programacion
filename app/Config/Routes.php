@@ -11,3 +11,5 @@ $routes->get('terminos', 'Terminos::index');
 $routes->get('quienes_somos', 'Quienes::index');
 $routes->get('contacto', 'Contacto::index');
 $routes->get('compras', 'Compras::index');
+$routes->post('/contacto/enviar', 'Contacto::enviar');
+
