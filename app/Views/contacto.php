@@ -1,24 +1,19 @@
 <?= view('templates/header') ?>
+<link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 
-<style>
-    .contact-form {
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        padding: 2rem;
-    }
-    .form-label {
-        font-weight: 500;
-        color: #2c3e50;
-    }
-</style>
 
 <main class="container py-5">
     <h1 class="text-center mb-4">Contacto</h1>
     
     <div class="row justify-content-center">
         <div class="col-lg-8">
-            <form class="contact-form" action="<?= base_url('contacto/enviar') ?>" method="POST">
+        <?php if (session()->getFlashdata('success')): ?>
+    <div class="alert alert-success d-flex align-items-center" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i> 
+        <?= session()->getFlashdata('success') ?>
+    </div>
+<?php endif; ?>
+            <form class="contact-form1" action="<?= base_url('contacto/enviar') ?>" method="POST">
 
                 <!-- Nombre y Email -->
                 <div class="row mb-3">
@@ -105,5 +100,18 @@
         </div>
     </div>
 </main>
+<div class="modal fade" id="modalExito" tabindex="-1" aria-labelledby="modalExitoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body p-4">
+        <div class="mb-3">
+          <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
+        </div>
+        <h5 class="mb-3">¡Mensaje enviado exitosamente!</h5>
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?= view('templates/footer') ?>
