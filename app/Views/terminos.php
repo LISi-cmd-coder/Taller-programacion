@@ -4,34 +4,53 @@
     main.legal-container {
         background-color: #f8f9fa;
     }
+    
     article.legal-content {
         background-color: #fff;
         border-radius: 10px;
         padding: 3rem;
         box-shadow: 0 0 15px rgba(0,0,0,0.05);
-        line-height: 1.7;
+        line-height: 1.6;
+        font-size: 1.0rem; /* Nuevo */
     }
+    
     h1, h2 {
         color: #333;
     }
+    
     h2 {
         border-bottom: 2px solid #dee2e6;
         padding-bottom: .5rem;
         margin-bottom: 1rem;
         margin-top: 2rem;
+        font-size: 1.35rem; /* Nuevo tamaño base */
     }
+    
+    /* Texto legal detallado */
+    .legal-content p {
+        font-size: 1.0rem; /* Igual que el contenedor */
+    }
+    
     @media (max-width: 768px) {
         article.legal-content {
             padding: 2rem;
+            font-size: 0.8rem; /* Reducción móvil */
         }
+        
         h1 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
+        
         h2 {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
+        }
+        
+        .legal-content p {
+            font-size: 0.8rem; /* Reducción móvil */
         }
     }
 </style>
+
 
 <main class="container py-5 legal-container">
     <h1 class="mb-4 text-center">Términos y Condiciones de Uso</h1>
@@ -87,3 +106,4 @@
 </main>
 
 <?= view('templates/footer') ?>
+
