@@ -120,3 +120,43 @@
         z-index: 3;
         background-color: #181818d9;
     }
+
+    body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #fefefe;
+}
+
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-right: 1px solid #eee;
+}
+
+.sidebar .navbar-brand {
+    color: #d63384;
+}
+
+.sidebar .nav-link {
+    color: #6c757d;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #d63384;
+    font-weight: 600;
+}
+
+.main-content {
+    margin-left: 220px;
+    width: 100%;
+}

@@ -17,7 +17,7 @@
                     <img src="<?= base_url('img/fondo.jpg') ?>" class="d-block w-100" alt="Imagen 1">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="<?= base_url('img/9.jpg') ?>" class="d-block w-100" alt="Imagen 2">
+                    <img src="<?= base_url('img/1.jpg') ?>" class="d-block w-100" alt="Imagen 2">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
                     <img src="<?= base_url('img/IMG_2187 (1).jpg') ?>" class="d-block w-100" alt="Imagen 3">
@@ -26,7 +26,7 @@
                     <img src="<?= base_url('img/IMG_2221 (1).jpg') ?>" class="d-block w-100" alt="Imagen 4">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="<?= base_url('img/pcaro.jpg') ?>" class="d-block w-100" alt="Imagen 4">
+                    <img src="<?= base_url('img/soy2.jpg') ?>" class="d-block w-100" alt="Imagen 4">
                 </div>
             </div>
 

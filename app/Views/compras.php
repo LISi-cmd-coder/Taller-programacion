@@ -28,8 +28,8 @@
                     <h5 class="card-title text-center">Aceptamos</h5>
                     <div class="d-flex justify-content-around align-items-center mb-3">
                         <img src="<?= base_url('img/mp.png') ?>" alt="Mercado Pago" style="height: 50px;">
-                        <img src="<?= base_url('img/bancaria.png') ?>" alt="Transferencia Bancaria" style="height: 50px;">
-                        <img src="<?= base_url('img/efec.png') ?>" alt="Efectivo" style="height: 50px;">
+                        <img src="<?= base_url('img/bancaria.jpg') ?>" alt="Transferencia Bancaria" style="height: 50px;">
+                        <img src="<?= base_url('img/efec.jpg') ?>" alt="Efectivo" style="height: 50px;">
                     </div>
                     <p class="text-center">
                         ¡Ahora podés pagar con Tarjeta Naranja en 6 cuotas sin interés!
