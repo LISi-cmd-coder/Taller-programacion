@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= esc($title ?? 'VAVI') ?></title>
     
-    <!-- Bootstrap CSS -->
+    <!-- NAVBAR -->
+         <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
 <body class="cuerpo">
-    <!-- NAVBAR -->
-     
+    
+
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
     <div class="container-fluid justify-content-between justify-content-lg-center"> <!-- Flexbox responsive -->
         <!-- Logo centrado en móvil -->
@@ -30,9 +34,11 @@
 
         
         <!-- Botón toggler -->
-        <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
 
         <!-- Menú centrado -->
         <div class="collapse navbar-collapse justify-content-lg-center order-lg-2" id="navbarNav">
@@ -46,3 +52,6 @@
         </div>
 
 </nav>
+
+
+</body>

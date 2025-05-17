@@ -92,7 +92,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 2;
+        z-index: 1;
         width: 100%;
         text-align: center;
         color: white;
@@ -105,8 +105,12 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 1;
+        z-index: 2;
     }
+    .carousel-control-prev,
+    .carousel-control-next {
+    z-index: 3; /* Asegura que los botones estén al frente */
+}
 
     .carousel-item img {
         height: 80vh; /* Igual que hero-section */
@@ -114,6 +118,7 @@
         filter: brightness(0.7);
     }
 
+    
     /* Asegurar que el footer sea visible */
     footer {
         position: relative;
